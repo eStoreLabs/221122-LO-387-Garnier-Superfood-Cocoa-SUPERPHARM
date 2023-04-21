@@ -55,7 +55,7 @@
 }
 #es-garnier.es-garnier .es-kv__imgCtn {
   width: 60%;
-  background-image: url(./img/kv-woman.png);
+  background-image: url(./img/kv-woman.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -66,7 +66,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url(./img/kv-ampoule.png);
+  background-image: url(./img/kv-ampoule.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100% 85%;
@@ -131,13 +131,13 @@
   align-items: flex-end;
 }
 #es-garnier.es-garnier .es-avo__single--oil {
-  background-image: url(./img/olejek.png);
+  background-image: url(./img/olejek.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 #es-garnier.es-garnier .es-avo__single--avo {
-  background-image: url(./img/ceramidy.png);
+  background-image: url(./img/ceramidy.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -361,7 +361,15 @@
 }
 #es-garnier.es-garnier .es-benefits__single p {
   font-size: 12px;
+  max-width: 15ch;
 }
+
+@media screen and (min-width: 420px) {
+  #es-garnier.es-garnier .es-benefits__single p {
+    max-width: unset;
+  }
+}
+
 #es-garnier.es-garnier .es-benefits__number {
   margin-right: 10px;
 }
@@ -589,9 +597,26 @@
 #es-garnier.es-garnier .es-footer {
   width: 100%;
   margin: 0;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#30663f),
+      color-stop(#167535),
+      to(#30663f)
+    );
+    background: linear-gradient(to right, #30663f, #167535, #30663f);
 }
 #es-garnier.es-garnier .es-footer img {
-  max-width: 100%;
+  width: 20%;
+}
+
+#es-garnier.es-garnier .es-footer img:nth-child(2) {
+  width: 15%;
 }
 
 @media (max-width: 650px) {
@@ -621,7 +646,7 @@
   }
   #es-garnier.es-garnier .es-avo__single {
     width: 500px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   #es-garnier.es-garnier .es-green__imgCtn {
     max-width: 300px;
