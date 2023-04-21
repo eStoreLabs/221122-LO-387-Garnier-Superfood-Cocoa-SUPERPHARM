@@ -506,7 +506,6 @@
 #es-garnier.es-garnier .es-cross__single {
   display: flex;
   flex-direction: column;
-  align-items: start;
   align-content: start;
   flex-basis: 23%;
   gap: 20px;
